@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const SingleBday = ({id, name, image, age, removeBday}) => {
+const SIngleBday = ({id, name, image, age, removeBday}) => {
   return (
     <>
 
