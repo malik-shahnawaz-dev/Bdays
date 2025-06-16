@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const SIngleBday = ({id, name, image, age, removeBday}) => {
+const Sbday = ({id, name, image, age, removeBday}) => {
   return (
     <>
 
@@ -23,4 +23,4 @@ const SIngleBday = ({id, name, image, age, removeBday}) => {
   )
 }
 
-export default SingleBday
+export default Sbday

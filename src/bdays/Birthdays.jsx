@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import SingleBday from './SIngleBday'
+import React, { useState } from 'react';
 import { bdays } from './data'
+import Sbday from './Sbday';
 
 const Birthdays = () => {
 
@@ -32,7 +32,7 @@ const Birthdays = () => {
             <h1 className='uppercase font-bold text-3xl text-blue-700 text-center'>{remove.length} Birthdays Today</h1>
 
             {remove?.map((item, index)=>{
-                return <SingleBday key={item.id} {...item} removeBday={removeBday} />
+               return <Sbday key={item.id} {...item} removeBday={removeBday} />
             })}
             
             <button onClick={removeData} className={`cursor-pointer w-full ${remove.length > 0 ? "bg-gradient-to-r from-blue-600 to-blue-800" : "bg-gradient-to-r from-green-600 to-green-800"} text-white p-2 rounded-md shadow-md`}>
